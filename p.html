@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Smart Expense Tracker</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="app-title">Smart Expense Tracker</h1>
+        <h3>Track your finances effortlessly</h3>
+    </header>
+    <main>
+       
+        <section class="summary">
+            <h1>💰 Balance: <span id="updatedBal">00</span></h1><br>
+            <div class="total">
+                <div class="Balance-section">
+                <div class="income-section">
+                    <h2>Income</h2>
+                   <h3> <p id="updatedInc" class="income">00</p></h3>
+                </div>
+                </div>
+
+                <div class="Balance-section">
+                <div class="expense-section">
+                    <h2>Expenses</h2>
+                   <h3><p id="updatedExp" class="expense">00</p> </h3> 
+                </div>
+                </div>
+
+                <div class="Balance-section">
+                <div class="expense-section">
+                    <h2>Percentage</h2>
+                   <h3><p id="updatedPer" class="expense">00</p> </h3> 
+                </div>
+                </div>
+            </div>
+        </section>
+         <!-- ======================================================================= 
+         <section class="to-do-summary">
+            <div id="taskContainer" class="taskHeader">
+                <h2>Task List</h2>
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <span onclick="addNewTask()" class="taskAddBtn">Add Task</span>
+              </div>
+              
+              <ul id="taskList">
+                 //** Tasks will be dynamically added here **//
+              </ul>
+         </section>    
+         ======================================================================= -->    
+
+            
+        
+        <section class="tracker">
+            <div class="expenses">
+                <h2>Expenses</h2>
+                <table id="table">
+                    <thead>
+                        <tr class="titles">
+                            <th></th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic Rows -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-section">
+                <h2>Add New Entry</h2>
+                <div class="form-group"><h4>
+                    <label for="itemType">Entry Type:</label>
+                    <select id="itemType">
+                        <option value="0">Expense</option>
+                        <option value="1">Income</option>
+                    </select></h4>
+                </div>
+                <div class="form-group"><h4>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" placeholder="e.g., Rent" /></h4>
+                </div>
+                <div class="form-group"><h4>
+                    <label for="amount">Amount:</label>
+                    <input id="amount" type="number" placeholder="e.g., 5000" /></h4>
+                </div>
+                <button onclick="addItem()">Add</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="todo.js"></script>
+</body>
+
+</html>

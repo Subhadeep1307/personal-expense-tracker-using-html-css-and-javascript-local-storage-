@@ -1,0 +1,245 @@
+/* General Reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: rgb(179, 169, 169);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 33px;
+    background: linear-gradient(45deg, #34c759, #30a14e);
+    color: white;
+}
+
+/* Summary Section */
+
+.summary {
+    background: white;
+    margin: 43px 467px;
+    padding: 32px 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.summary h1 {
+    margin: 3px 151px;
+   
+}
+.total{
+    display: flex;
+   
+}
+.Balance-section {
+    margin: 4px 29px;
+    padding: 0px 19px;
+    text-align: center;
+}
+
+
+.income {
+    color:rgb(5, 147, 5);
+}
+
+.expense {
+    color: red;
+}
+
+/* Tracker Styling */
+.tracker {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.expenses, .form-section {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.titles {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(47, 194, 194);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table tr:hover {
+    background-color: rgb(189, 186, 186);
+}
+
+button {
+    background:  rgb(57, 214, 57);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+button:hover {
+    background:  rgb(37, 145, 37);
+}
+
+
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    font-size: large;
+    padding: 1%;
+}
+
+.delete-btn {
+    background-color:rgb(37, 37, 197);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition:  0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color:  red;
+}
+
+
+/*===========*************-------------------******************============== */
+
+
+/* Include padding and border in an element's total width and height */
+
+.to-do-summary {
+    background: white;
+    margin: 20px 73px;
+    padding: 21px 13px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the unordered list */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style the task items */
+  ul li {
+    position: relative;
+    padding: 14px 10px 14px 45px;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Odd numbered items with different background */
+  ul li:nth-child(odd) {
+    background-color: #e7e7e7;
+  }
+  
+  /* Change background color on hover */
+  ul li:hover {
+    background-color: #d5d5d5;
+  }
+  
+  /* Strike-through completed tasks */
+  ul li.checked {
+    background-color: #555;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add check mark for completed tasks */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border: solid 2px #fff;
+    border-width: 0 2px 2px 0;
+    top: 12px;
+    left: 18px;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 15px;
+  }
+  
+  /* Close button for each task */
+  .closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  
+  .closeBtn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Header style */
+  .taskHeader {
+    background-color: #007bff;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  /* Input field styling */
+  input {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Add Task button styling */
+  .taskAddBtn {
+    width: 25%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .taskAddBtn:hover {
+    background-color: #218838;
+  }
+  
